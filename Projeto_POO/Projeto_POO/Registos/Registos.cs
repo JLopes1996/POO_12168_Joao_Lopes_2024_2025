@@ -89,5 +89,31 @@ namespace Jardim_Zoológico.Registos
             public string Username { get; set; }
             public string Password { get; set; }
         }
+
+        private void Registos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Registos_Voltar_Click(object sender, EventArgs e)
+        {
+
+            // Abrir o formulário de Menu_Inicio_1
+            Menu_Inicio.Menu_Inicio_1 Menu_Inicio_1 = new Menu_Inicio.Menu_Inicio_1();
+            Menu_Inicio_1.Show();
+
+            // Fechar o formulário
+            this.Hide();
+        }
+
+        private void btn_Inicio_Login_Click(object sender, EventArgs e)
+        {
+            // Abrir o formulário de Menu_Inicio_1
+            Menu_Inicio.Menu_Inicio_1 Menu_Inicio_1 = new Menu_Inicio.Menu_Inicio_1();
+            Menu_Inicio_1.Show();
+
+            // Fechar o formulário
+            this.Hide();
+        }
     }
 }

@@ -32,11 +32,6 @@ namespace Jardim_Zoológico.Sistema_Login
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void Sistema_Login_Load(object sender, EventArgs e)
         {
 
@@ -56,9 +51,11 @@ namespace Jardim_Zoológico.Sistema_Login
                 {
                     MessageBox.Show("Login bem-sucedido!");
 
+                    //COLOCAR AQUI O MENU QUE QUERO ABRIR APÓS EFETUAR O LOGIN
+
                     // Abrir o formulário Menu_Principal
-                    Menu_Principal menuPrincipal = new Menu_Principal();
-                    menuPrincipal.Show();
+                    //Menu_Principal_1 menuPrincipal = new Menu_Principal_!();
+                    //menuPrincipal.Show();
 
                     // Fechar o formulário de login
                     this.Hide();
@@ -151,6 +148,16 @@ namespace Jardim_Zoológico.Sistema_Login
         {
             public string Username { get; set; }
             public string Password { get; set; }
+        }
+
+        private void btn_Inicio_Login_Click(object sender, EventArgs e)
+        {
+            // Abrir o formulário de Menu_Inicio_1
+            Menu_Inicio.Menu_Inicio_1 Menu_Inicio_1 = new Menu_Inicio.Menu_Inicio_1();
+            Menu_Inicio_1.Show();
+
+            // Fechar o formulário
+            this.Hide();
         }
     }
 }

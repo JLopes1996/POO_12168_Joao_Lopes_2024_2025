@@ -49,11 +49,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu_Principal\Menu_Principal.cs">
+    <Compile Include="Menu_Inicio\Bilhetes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Principal\Menu_Principal.Designer.cs">
-      <DependentUpon>Menu_Principal.cs</DependentUpon>
+    <Compile Include="Menu_Inicio\Bilhetes.Designer.cs">
+      <DependentUpon>Bilhetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\Calendário.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\Calendário.Designer.cs">
+      <DependentUpon>Calendário.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\Animais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\Animais.Designer.cs">
+      <DependentUpon>Animais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\Resumo_Diário.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\Resumo_Diário.Designer.cs">
+      <DependentUpon>Resumo_Diário.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\História.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\História.Designer.cs">
+      <DependentUpon>História.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\Serviços.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\Serviços.Designer.cs">
+      <DependentUpon>Serviços.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\Horário.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\Horário.Designer.cs">
+      <DependentUpon>Horário.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\Informações.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\Informações.Designer.cs">
+      <DependentUpon>Informações.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Inicio\Menu_Inicio_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Inicio\Menu_Inicio_1.Designer.cs">
+      <DependentUpon>Menu_Inicio_1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,8 +123,35 @@
     <Compile Include="Sistema_Login\Sistema_Login.Designer.cs">
       <DependentUpon>Sistema_Login.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Menu_Principal\Menu_Principal.resx">
-      <DependentUpon>Menu_Principal.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_Inicio\Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\Animais.resx">
+      <DependentUpon>Animais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\Bilhetes.resx">
+      <DependentUpon>Bilhetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\Calendário.resx">
+      <DependentUpon>Calendário.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\História.resx">
+      <DependentUpon>História.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\Horário.resx">
+      <DependentUpon>Horário.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\Informações.resx">
+      <DependentUpon>Informações.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\Menu_Inicio_1.resx">
+      <DependentUpon>Menu_Inicio_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\Resumo_Diário.resx">
+      <DependentUpon>Resumo_Diário.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Inicio\Serviços.resx">
+      <DependentUpon>Serviços.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,5 +182,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

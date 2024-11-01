@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jardim_Zoológico", "Jardim_Zoológico.csproj", "{839DF235-6FE4-4A96-BCFA-82158E244731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{839DF235-6FE4-4A96-BCFA-82158E244731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839DF235-6FE4-4A96-BCFA-82158E244731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839DF235-6FE4-4A96-BCFA-82158E244731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839DF235-6FE4-4A96-BCFA-82158E244731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {479E51D3-5514-4291-9326-430E2F681DCA}
+	EndGlobalSection
+EndGlobal

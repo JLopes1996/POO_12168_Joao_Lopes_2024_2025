@@ -16,8 +16,7 @@ namespace Jardim_Zoológico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Sistema_Login.Sistema_Login());
-            //Application.Run(new Menu_Principal());
+            Application.Run(new Menu_Inicio.Menu_Inicio_1());
         }
     }
 }
