@@ -16,7 +16,7 @@ namespace Jardim_Zoológico.Classes
 
         // Construtor da classe Bilhete
 
-        public Bilhete(string nome, DateTime horario, TimeSpan duracao, Animal animal, double preco, string tipo)
+        public Bilhete(string nome, DateTime horario, TimeSpan duracao, Animal animal, double preco, string tipo, int quantidade)
         : base(nome, horario, duracao, animal)
         {
             Preco = preco;

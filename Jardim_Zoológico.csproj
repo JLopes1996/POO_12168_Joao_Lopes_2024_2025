@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Classes\Animal.cs" />
     <Compile Include="Classes\Bilhete.cs" />
+    <Compile Include="Classes\BilheteEntrada.cs" />
     <Compile Include="Classes\Funcionário.cs" />
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\Jaula.cs" />
