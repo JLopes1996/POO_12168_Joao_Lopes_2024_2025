@@ -1,0 +1,47 @@
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\bin\Debug\Jardim_Zoológico.exe.config
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\bin\Debug\Jardim_Zoológico.exe
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\bin\Debug\Jardim_Zoológico.pdb
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.csproj.AssemblyReference.cache
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Properties.Resources.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.csproj.GenerateResource.cache
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.csproj.CoreCompileInputs.cache
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.exe
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.pdb
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Sistema_Login.Sistema_Login.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Registos.Registos.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\bin\Debug\Newtonsoft.Json.dll
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\bin\Debug\Newtonsoft.Json.xml
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Z.D8D52222.Up2Date
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Bilhetes.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Horário.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Informações.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Menu_Inicio_1.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Agenda.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Calendário.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Serviços.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Animais.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.História.resources
+C:\Users\João Lopes\Desktop\Teste_Teste\Jardim_Zoológico\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Resumo_Diário.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.csproj.AssemblyReference.cache
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Agenda.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Animais.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Bilhetes.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.História.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Horário.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Informações.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Menu_Inicio_1.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Resumo_Diário.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Menu_Inicio.Serviços.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Properties.Resources.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Registos.Registos.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.Sistema_Login.Sistema_Login.resources
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.csproj.GenerateResource.cache
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.csproj.CoreCompileInputs.cache
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.exe
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Zoológico.pdb
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\bin\Debug\Jardim_Zoológico.exe.config
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\bin\Debug\Jardim_Zoológico.exe
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\bin\Debug\Jardim_Zoológico.pdb
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\bin\Debug\Newtonsoft.Json.dll
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\bin\Debug\Newtonsoft.Json.xml
+C:\Users\João Lopes\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\Jardim_Zoológico\obj\Debug\Jardim_Z.D8D52222.Up2Date
