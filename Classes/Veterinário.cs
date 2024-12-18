@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Jardim_Zoológico.Classes
 {
@@ -10,18 +6,13 @@ namespace Jardim_Zoológico.Classes
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+        public string Contacto { get; set; }
 
-        public Veterinario(int id, string nome)
+        public Veterinario(int id, string nome, string contacto)
         {
             Id = id;
             Nome = nome;
-        }
-
-        //Método para imprimir dados sobre o veterinário
-
-        public void InfoVeterinário()
-        {
-            Console.WriteLine($"Veterinário {Nome}.");
+            Contacto = contacto;
         }
     }
 }

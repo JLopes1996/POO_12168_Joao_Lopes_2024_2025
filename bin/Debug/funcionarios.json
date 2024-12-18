@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Nome": "Administrador",
+    "Cargo": "Gerente",
+    "DataDeEntrada": "2024-01-01T00:00:00",
+    "Salário": 5000.0,
+    "Password": "12345"
+  },
+  {
+    "Id": 2,
+    "Nome": "Rodrigo",
+    "Cargo": "Funcionario",
+    "DataDeEntrada": "2024-04-13T00:00:00",
+    "Salário": 5000.0,
+    "Password": "12345"
+  },
+  {
+    "Id": 3,
+    "Nome": "Marcelo",
+    "Cargo": "Funcionario",
+    "DataDeEntrada": "2024-05-15T00:00:00",
+    "Salário": 2000.0,
+    "Password": "1234"
+  }
+]

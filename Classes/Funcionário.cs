@@ -1,9 +1,4 @@
-﻿using Jardim_Zoológico.Menu_Inicio;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace Jardim_Zoológico.Classes
 {
@@ -13,22 +8,21 @@ namespace Jardim_Zoológico.Classes
 
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string Cargo { get; set; } // Cargo do funcionário: gerente, funcionário limpeza, tratador...
+        public string Cargo { get; set; } // Cargo do funcionário: gerente, funcionário limpeza...
+        public DateTime DataDeEntrada { get; set; }
+        public float Salário { get; set; }
+        public string Password { get; set; }
 
         // Construtor da classe Funcionário
 
-        public Funcionario(int id, string nome, string cargo)
+        public Funcionario(int id, string nome, string cargo, DateTime dataDeEntrada, float salário, string password)
         {
             Id = id;
             Nome = nome;
             Cargo = cargo;
-        }
-
-        //Método para imprimir dados sobre o Funcionário
-
-        public void InfoFuncionário()
-        {
-            Console.WriteLine($" O Funcionario {Nome} é {Cargo} do Zoológico.");
+            DataDeEntrada = dataDeEntrada;
+            Salário = salário;
+            Password = password;
         }
     }
 }

@@ -1,9 +1,4 @@
-﻿using Jardim_Zoológico.Menu_Inicio;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace Jardim_Zoológico.Classes
 {
@@ -29,14 +24,6 @@ namespace Jardim_Zoológico.Classes
             Comida = comida;
             Jaula = jaula;
             Veterinario = veterinario;
-        }
-
-        // Método para imprimir dados sobre o Animal.
-
-        public void InfoAnimal()
-        {
-            Console.WriteLine($" {Tipo} {Nome}, {Idade} anos, está na {Jaula.Id}, alimenta-se de {Comida.Tipo}" +
-                $"e o seu veterinário é: {Veterinario.Nome}");
         }
     }
 }

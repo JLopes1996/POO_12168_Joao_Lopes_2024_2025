@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sistema_Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Inicio_Login = new System.Windows.Forms.Button();
             this.label_Titulo = new System.Windows.Forms.Label();
             this.btn_Login = new System.Windows.Forms.Button();
             this.textBox_Username = new System.Windows.Forms.TextBox();
@@ -42,7 +43,6 @@
             this.label_Password = new System.Windows.Forms.Label();
             this.textBox_Password = new System.Windows.Forms.TextBox();
             this.label_Username = new System.Windows.Forms.Label();
-            this.btn_Inicio_Login = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,7 +59,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(661, 30);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // btn_Inicio_Login
+            // 
+            this.btn_Inicio_Login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Inicio_Login.BackColor = System.Drawing.Color.White;
+            this.btn_Inicio_Login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Inicio_Login.FlatAppearance.BorderSize = 0;
+            this.btn_Inicio_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btn_Inicio_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btn_Inicio_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Inicio_Login.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Inicio_Login.ForeColor = System.Drawing.Color.Black;
+            this.btn_Inicio_Login.Location = new System.Drawing.Point(603, 0);
+            this.btn_Inicio_Login.Name = "btn_Inicio_Login";
+            this.btn_Inicio_Login.Size = new System.Drawing.Size(58, 30);
+            this.btn_Inicio_Login.TabIndex = 5;
+            this.btn_Inicio_Login.Text = "Voltar";
+            this.btn_Inicio_Login.UseVisualStyleBackColor = false;
+            this.btn_Inicio_Login.Click += new System.EventHandler(this.btn_Inicio_Login_Click);
             // 
             // label_Titulo
             // 
@@ -122,6 +141,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(283, 259);
             this.panel2.TabIndex = 4;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btn_Registar
             // 
@@ -199,25 +219,6 @@
             this.label_Username.TabIndex = 4;
             this.label_Username.Text = "Username";
             // 
-            // btn_Inicio_Login
-            // 
-            this.btn_Inicio_Login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Inicio_Login.BackColor = System.Drawing.Color.White;
-            this.btn_Inicio_Login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Inicio_Login.FlatAppearance.BorderSize = 0;
-            this.btn_Inicio_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
-            this.btn_Inicio_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btn_Inicio_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Inicio_Login.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Inicio_Login.ForeColor = System.Drawing.Color.Black;
-            this.btn_Inicio_Login.Location = new System.Drawing.Point(603, 0);
-            this.btn_Inicio_Login.Name = "btn_Inicio_Login";
-            this.btn_Inicio_Login.Size = new System.Drawing.Size(58, 30);
-            this.btn_Inicio_Login.TabIndex = 5;
-            this.btn_Inicio_Login.Text = "Voltar";
-            this.btn_Inicio_Login.UseVisualStyleBackColor = false;
-            this.btn_Inicio_Login.Click += new System.EventHandler(this.btn_Inicio_Login_Click);
-            // 
             // Sistema_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -234,6 +235,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Sistema_Login";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Sistema_Login_Load);
             this.panel1.ResumeLayout(false);

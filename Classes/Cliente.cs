@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Jardim_Zoológico.Classes
 {
@@ -27,13 +23,6 @@ namespace Jardim_Zoológico.Classes
             Contacto = contacto;
             Password = password;
             Bilhete = bilhete;
-        }
-
-        //Método para imprimir dados sobre o Utilizador
-
-        public void InfoCliente()
-        {
-            Console.WriteLine($"O cliente {Id} {Nome} comprou o bilhete {Bilhete.Tipo} por {Bilhete.Preco}.");
         }
     }
 }

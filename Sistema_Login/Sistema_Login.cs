@@ -1,17 +1,22 @@
-﻿using Jardim_Zoológico.Registos;
-using Microsoft.Win32;
+﻿using Jardim_Zoológico.Classes;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
+using System.Diagnostics.Eventing.Reader;
 using System.IO;
-using Newtonsoft.Json;
-using static Jardim_Zoológico.Registos.Registos;
+using System.Windows.Forms;
+using Jardim_Zoológico.Menu_Funcionários;
+using Jardim_Zoológico.Menu_Clientes;
 
 namespace Jardim_Zoológico.Sistema_Login
 {
     public partial class Sistema_Login : Form
     {
-        private static readonly string FilePath = "utilizadores.json";
+        // Lista de clientes
+        private static readonly string FilePathClientes = "clientes.json";
+
+        // Lista de funcionários
+        private static readonly string FilePathFuncionarios = "funcionarios.json";
 
         public Sistema_Login()
         {
@@ -21,13 +26,32 @@ namespace Jardim_Zoológico.Sistema_Login
 
         private void EnsureFileExists()
         {
-            if (!File.Exists(FilePath))
+            // Se o ficheiro clientes.json não existir, cria um ficheiro JSON vazio
+            if (!File.Exists(FilePathClientes))
+                File.WriteAllText(FilePathClientes, "[]");
+
+            //Se o ficheiro fuincionarios.json não existir, cria um ficheiro JSON vazio e um gerente
+            if (!File.Exists(FilePathFuncionarios))
             {
-                File.WriteAllText(FilePath, "[]"); // Cria um arquivo JSON vazio
+                // Criação do Gerente Inicial, com os parâmetros necessários
+                var gerenteInicial = new Funcionario(
+                id: 1,
+                nome: "Administrador",
+                cargo: "Gerente",
+                dataDeEntrada: DateTime.Parse("2024-01-01"),
+                salário: 5000.0f,
+                password: "12345"
+                );
+
+                // Adiciona o gerente inicial à lista de funcionários
+                var funcionarios = new List<Funcionario> { gerenteInicial };
+
+                // Serializa a lista para JSON e grava no arquivo
+                File.WriteAllText(FilePathFuncionarios, JsonConvert.SerializeObject(funcionarios, Formatting.Indented));
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -42,112 +66,85 @@ namespace Jardim_Zoológico.Sistema_Login
             string username = textBox_Username.Text;
             string password = textBox_Password.Text;
 
-            if (File.Exists(FilePath))
+            // Flag para verificar se o login foi bem-sucedido
+            bool loginBemSucedido = false;
+
+            // Primeiro, verifica se os dados inseridos correspondem a um funcionário
+            if (File.Exists(FilePathFuncionarios))
             {
-                string json = File.ReadAllText(FilePath);
-                var users = DeserializeUsers(json);
+                string jsonFuncionarios = File.ReadAllText(FilePathFuncionarios);
+                var funcionarios = JsonConvert.DeserializeObject<List<Funcionario>>(jsonFuncionarios);
 
-                if (users.Exists(u => u.Username == username && u.Password == password))
+                // Encontra o funcionário com o username e password fornecidos
+                var funcionario = funcionarios.Find(f => f.Nome == username && f.Password == password);
+
+                // Se o funcionário for encontrado
+                if (funcionario != null)
                 {
-                    MessageBox.Show("Login bem-sucedido!");
+                    MessageBox.Show("Login de Funcionário bem-sucedido!");
 
-                    //COLOCAR AQUI O MENU QUE QUERO ABRIR APÓS EFETUAR O LOGIN
-
-                    // Abrir o formulário Menu_Principal
-                    //Menu_Principal_1 menuPrincipal = new Menu_Principal_!();
-                    //menuPrincipal.Show();
-
-                    // Fechar o formulário de login
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Username ou Password incorretos.");
+                    // Verifica se é o Administrador
+                    if (funcionario.Cargo == "Gerente" || funcionario.Cargo == "Funcionario")
+                    {
+                        // Se for gerente ou funcionário, navega para o menu de funcionários
+                        Jardim_Zoológico.Menu_Funcionários.Form_Menu_Funcionarios menuFuncionario = new Jardim_Zoológico.Menu_Funcionários.Form_Menu_Funcionarios(funcionario);
+                        menuFuncionario.Show();
+                        this.Hide();
+                        loginBemSucedido = true; // Marca o login como bem-sucedido
+                    }
+                    else
+                    {
+                        MessageBox.Show("Acesso restrito apenas a funcionários.");
+                    }
                 }
             }
-            else
+
+            // Se não for funcionário, verifica se é cliente
+
+            // Só verifica o cliente se o login do funcionário falhar
+            if (!loginBemSucedido && File.Exists(FilePathClientes))
             {
-                MessageBox.Show("Nenhum user registado.");
+                string jsonClientes = File.ReadAllText(FilePathClientes);
+                var clientes = JsonConvert.DeserializeObject<List<Cliente>>(jsonClientes);
+
+                // Encontra o cliente com o username e password fornecidos
+                var cliente = clientes.Find(c => c.Nome == username && c.Password == password);
+
+                // Se o cliente for encontrado
+                if (cliente != null)
+                {
+                    MessageBox.Show("Login de Cliente bem-sucedido!");
+
+                    // Abre o menu do cliente
+                    Menu_Cliente menuCliente = new Menu_Cliente(); // Passa o cliente logado
+                    menuCliente.Show();
+                    this.Hide();
+                    loginBemSucedido = true; // Marca o login como bem-sucedido
+                }
+            }
+
+            // Se nenhum login foi bem-sucedido
+            if (!loginBemSucedido)
+            {
+                MessageBox.Show("Os dados estão incorretos.");
             }
         }
 
-        private void btn_Registar_Click(object sender, EventArgs e)
+
+                private void btn_Registar_Click(object sender, EventArgs e)
         {
-            // Exibir o formulário de registo para obter os dados do novo usuário
-            Jardim_Zoológico.Registos.Registos registosForm = new Jardim_Zoológico.Registos.Registos();
+            // Exibe o formulário de registro para o cliente
+            Registos.Registos registosForm = new Registos.Registos();
             if (registosForm.ShowDialog() == DialogResult.OK)
             {
-                // Obter o novo usuário do formulário de registo
-                Jardim_Zoológico.Registos.Registos.User new_user = registosForm.NewUser;
-
-                // Converter o usuário do formulário de registo para o tipo de usuário do sistema de login
-                User loginUser = new User
-                {
-                    Username = new_user.Username,
-                    Password = new_user.Password
-                };
-
-                // Ler o conteúdo existente do arquivo
-                string json = File.ReadAllText(FilePath);
-                var users = DeserializeUsers(json);
-
-                // Adicionar o novo usuário à lista
-                users.Add(loginUser);
-
-                // Remover duplicados
-                users = RemoveDuplicateUsers(users);
-
-                // Serializar a lista atualizada de volta para JSON com formatação legível
-                string updatedJson = JsonConvert.SerializeObject(users, Formatting.Indented);
-                File.WriteAllText(FilePath, updatedJson);
-
-                MessageBox.Show("Usuário registado com sucesso!");
+                // Cliente registrado com sucesso, vai para o menu inicial
+                this.Hide();
             }
         }
 
         private void Sistema_Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-        }
-
-        private List<User> DeserializeUsers(string json)
-        {
-            if (string.IsNullOrWhiteSpace(json))
-            {
-                return new List<User>();
-            }
-
-            try
-            {
-                return JsonConvert.DeserializeObject<List<User>>(json) ?? new List<User>();
-            }
-            catch (JsonException)
-            {
-                MessageBox.Show("Erro ao ler o arquivo de usuários. O arquivo pode estar corrompido.");
-                return new List<User>();
-            }
-        }
-
-        private List<User> RemoveDuplicateUsers(List<User> users)
-        {
-            var uniqueUsers = new HashSet<string>();
-            var distinctUsers = new List<User>();
-
-            foreach (var user in users)
-            {
-                if (uniqueUsers.Add(user.Username))
-                {
-                    distinctUsers.Add(user);
-                }
-            }
-
-            return distinctUsers;
-        }
-
-        public class User
-        {
-            public string Username { get; set; }
-            public string Password { get; set; }
         }
 
         private void btn_Inicio_Login_Click(object sender, EventArgs e)
@@ -158,6 +155,11 @@ namespace Jardim_Zoológico.Sistema_Login
 
             // Fechar o formulário
             this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

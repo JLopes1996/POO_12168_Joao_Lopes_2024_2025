@@ -51,13 +51,36 @@
   <ItemGroup>
     <Compile Include="Classes\Animal.cs" />
     <Compile Include="Classes\Bilhete.cs" />
-    <Compile Include="Classes\BilheteEntrada.cs" />
     <Compile Include="Classes\Funcionário.cs" />
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\Jaula.cs" />
     <Compile Include="Classes\Espetáculo.cs" />
     <Compile Include="Classes\Veterinário.cs" />
     <Compile Include="Classes\Comida.cs" />
+    <Compile Include="Menu_Clientes\Menu_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Clientes\Menu_Cliente.Designer.cs">
+      <DependentUpon>Menu_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Funcionarios\Form_Listar_Funcionários.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Funcionarios\Form_Listar_Funcionários.Designer.cs">
+      <DependentUpon>Form_Listar_Funcionários.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Funcionarios\Form_Registar_Funcionário.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Funcionarios\Form_Registar_Funcionário.Designer.cs">
+      <DependentUpon>Form_Registar_Funcionário.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Funcionarios\Form_Menu_Funcionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Funcionarios\Form_Menu_Funcionarios.Designer.cs">
+      <DependentUpon>Form_Menu_Funcionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu_Inicio\Bilhetes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +149,18 @@
     <Compile Include="Sistema_Login\Sistema_Login.Designer.cs">
       <DependentUpon>Sistema_Login.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Menu_Clientes\Menu_Cliente.resx">
+      <DependentUpon>Menu_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Funcionarios\Form_Registar_Funcionário.resx">
+      <DependentUpon>Form_Registar_Funcionário.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Funcionarios\Form_Listar_Funcionários.resx">
+      <DependentUpon>Form_Listar_Funcionários.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Funcionarios\Form_Menu_Funcionarios.resx">
+      <DependentUpon>Form_Menu_Funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu_Inicio\Agenda.resx">
       <DependentUpon>Agenda.cs</DependentUpon>
     </EmbeddedResource>

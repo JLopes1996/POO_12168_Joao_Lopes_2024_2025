@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Jardim_Zoológico.Classes
 {
@@ -12,20 +8,17 @@ namespace Jardim_Zoológico.Classes
 
         public string Tipo { get; set; }
         public int Quantidade { get; set; }
+        public DateTime Validade { get; set; }
+        public string Origem { get; set; }
 
         // Construtor da classe Comida
 
-        public Comida(string tipo, int quantidade)
+        public Comida(string tipo, int quantidade, DateTime validade, string origem)
         {
             Tipo = tipo;
             Quantidade = quantidade;
-        }
-
-        // Método para imprimir dados sobre a Comida
-
-        public void InfoComida()
-        {
-            Console.WriteLine($" Alimentou o animal com {Quantidade} de {Tipo}.");
+            Validade = validade;
+            Origem = origem;
         }
     }
 }

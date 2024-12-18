@@ -48,10 +48,13 @@
             this.labelTitulo_Registar = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btn_Registos_Voltar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Inicio_Login = new System.Windows.Forms.Button();
             this.label_Titulo = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox_NIF = new System.Windows.Forms.TextBox();
+            this.textBox_Contacto = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,7 +107,7 @@
             this.btn_Registar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_Registar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Registar.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Registar.Location = new System.Drawing.Point(60, 228);
+            this.btn_Registar.Location = new System.Drawing.Point(60, 323);
             this.btn_Registar.Name = "btn_Registar";
             this.btn_Registar.Size = new System.Drawing.Size(150, 30);
             this.btn_Registar.TabIndex = 6;
@@ -266,21 +269,6 @@
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
-            // btn_Registos_Voltar
-            // 
-            this.btn_Registos_Voltar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Registos_Voltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Registos_Voltar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
-            this.btn_Registos_Voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.btn_Registos_Voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Registos_Voltar.Location = new System.Drawing.Point(270, 102);
-            this.btn_Registos_Voltar.Name = "btn_Registos_Voltar";
-            this.btn_Registos_Voltar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Registos_Voltar.TabIndex = 14;
-            this.btn_Registos_Voltar.Text = "Voltar";
-            this.btn_Registos_Voltar.UseVisualStyleBackColor = false;
-            this.btn_Registos_Voltar.Click += new System.EventHandler(this.btn_Registos_Voltar_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(18)))), ((int)(((byte)(80)))));
@@ -314,12 +302,50 @@
             // label_Titulo
             // 
             this.label_Titulo.AutoSize = true;
+            this.label_Titulo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Titulo.ForeColor = System.Drawing.Color.White;
             this.label_Titulo.Location = new System.Drawing.Point(12, 8);
             this.label_Titulo.Name = "label_Titulo";
-            this.label_Titulo.Size = new System.Drawing.Size(135, 13);
+            this.label_Titulo.Size = new System.Drawing.Size(151, 15);
             this.label_Titulo.TabIndex = 5;
             this.label_Titulo.Text = "Jardim_Zoológico - Registo";
+            this.label_Titulo.Click += new System.EventHandler(this.label_Titulo_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(59, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(24, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "NIF";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(57, 270);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Contacto";
+            // 
+            // textBox_NIF
+            // 
+            this.textBox_NIF.Location = new System.Drawing.Point(60, 235);
+            this.textBox_NIF.Name = "textBox_NIF";
+            this.textBox_NIF.Size = new System.Drawing.Size(158, 20);
+            this.textBox_NIF.TabIndex = 18;
+            // 
+            // textBox_Contacto
+            // 
+            this.textBox_Contacto.Location = new System.Drawing.Point(60, 286);
+            this.textBox_Contacto.Name = "textBox_Contacto";
+            this.textBox_Contacto.Size = new System.Drawing.Size(158, 20);
+            this.textBox_Contacto.TabIndex = 19;
             // 
             // Registos
             // 
@@ -327,8 +353,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(645, 450);
+            this.Controls.Add(this.textBox_Contacto);
+            this.Controls.Add(this.textBox_NIF);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_Registos_Voltar);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.labelTitulo_Registar);
@@ -339,6 +368,7 @@
             this.Controls.Add(this.label_Password);
             this.Controls.Add(this.label_Username);
             this.Name = "Registos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Registos_Load);
             this.panel2.ResumeLayout(false);
@@ -374,9 +404,12 @@
         private System.Windows.Forms.Label labelTitulo_Registar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btn_Registos_Voltar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Inicio_Login;
         private System.Windows.Forms.Label label_Titulo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox_NIF;
+        private System.Windows.Forms.TextBox textBox_Contacto;
     }
 }

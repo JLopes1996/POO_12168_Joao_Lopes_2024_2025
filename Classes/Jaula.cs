@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Jardim_Zoológico.Classes
 {
@@ -22,13 +17,6 @@ namespace Jardim_Zoológico.Classes
             Id = id;
             Capacidade = capacidade;
             Funcionario = funcionario;
-        }
-
-        //Método para imprimir dados sobre a jaula
-
-        public void InfoJaula()
-        {
-            Console.WriteLine($" A jaula {Capacidade} onde se encontra o foi limpa por {Funcionario.Nome}.");
         }
     }
 }

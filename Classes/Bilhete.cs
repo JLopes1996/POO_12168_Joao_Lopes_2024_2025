@@ -1,9 +1,4 @@
-﻿using Jardim_Zoológico.Menu_Inicio;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace Jardim_Zoológico.Classes
 {
@@ -16,18 +11,11 @@ namespace Jardim_Zoológico.Classes
 
         // Construtor da classe Bilhete
 
-        public Bilhete(string nome, DateTime horario, TimeSpan duracao, Animal animal, double preco, string tipo, int quantidade)
-        : base(nome, horario, duracao, animal)
+        public Bilhete(string nome, DateTime horario, TimeSpan duracao, Animal animal, string local, string capacidade, string descrição, double preco, string tipo)
+        : base(nome, horario, duracao, animal, local, capacidade, descrição)
         {
             Preco = preco;
             Tipo = tipo;
-        }
-
-        // Método para imprimir dados sobre o Bilhete
-
-        public void InfoBilhete()
-        {
-            Console.WriteLine($" Comprou o bilhete: {Tipo} pelo valor de {Preco}.");
         }
     }
 }
