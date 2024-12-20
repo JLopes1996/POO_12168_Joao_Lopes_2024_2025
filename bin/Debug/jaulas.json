@@ -1,0 +1,40 @@
+[
+  {
+    "Id": 1,
+    "Capacidade": "Média",
+    "Animais": []
+  },
+  {
+    "Id": 2,
+    "Capacidade": "Pequena",
+    "Animais": []
+  },
+  {
+    "Id": 3,
+    "Capacidade": "Grande",
+    "Animais": [
+      {
+        "Id": 3,
+        "Nome": "Pandora",
+        "Idade": "2024-12-19T16:17:05.0858117+00:00",
+        "Tipo": "Gorila",
+        "Comida": {
+          "Tipo": "Herviboro",
+          "Quantidade": 10,
+          "Validade": "2024-12-19T16:17:05.1082973+00:00",
+          "Origem": "Portugal"
+        },
+        "Jaula": {
+          "Id": 3,
+          "Capacidade": "Grande",
+          "Animais": []
+        },
+        "Veterinario": {
+          "Id": 8,
+          "Nome": "Pedro",
+          "Contacto": "999999999"
+        }
+      }
+    ]
+  }
+]

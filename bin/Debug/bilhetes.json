@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "Preco": 20.0,
+    "Tipo": "Adulto",
+    "Nome": "Animalia",
+    "Horario": "2024-12-23T20:00:50",
+    "Duracao": "50 minutos",
+    "Animal": {
+      "Id": 2,
+      "Nome": "OOOO",
+      "Idade": "2024-12-19T16:08:54.3075802+00:00",
+      "Tipo": "Puma",
+      "Comida": {
+        "Tipo": "Carne",
+        "Quantidade": 100,
+        "Validade": "2024-12-19T16:08:54.3163712+00:00",
+        "Origem": "Selva"
+      },
+      "Jaula": {
+        "Id": 2,
+        "Capacidade": "Pequena",
+        "Animais": []
+      },
+      "Veterinario": {
+        "Id": 6,
+        "Nome": "Rosa",
+        "Contacto": "123456789"
+      }
+    },
+    "Local": "Área azul",
+    "Capacidade": "Média",
+    "Descrição": "Foguetes"
+  },
+  {
+    "Id": 2,
+    "Preco": 10.0,
+    "Tipo": "Criança",
+    "Nome": "Ardozia",
+    "Horario": "2024-12-30T20:00:44",
+    "Duracao": "60 minutos",
+    "Animal": {
+      "Id": 1,
+      "Nome": "AAAAA",
+      "Idade": "2024-12-19T16:07:46.0652118+00:00",
+      "Tipo": "Leão",
+      "Comida": {
+        "Tipo": "Carne",
+        "Quantidade": 100,
+        "Validade": "2024-12-19T16:07:46.0842253+00:00",
+        "Origem": "Savana"
+      },
+      "Jaula": {
+        "Id": 1,
+        "Capacidade": "Média",
+        "Animais": []
+      },
+      "Veterinario": {
+        "Id": 5,
+        "Nome": "Martins",
+        "Contacto": "123456789"
+      }
+    },
+    "Local": "Área cinzenta",
+    "Capacidade": "Média",
+    "Descrição": "Acrobacias de Leão"
+  }
+]

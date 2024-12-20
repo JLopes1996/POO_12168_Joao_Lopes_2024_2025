@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,144 +50,181 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Animal.cs" />
-    <Compile Include="Classes\Bilhete.cs" />
-    <Compile Include="Classes\Funcionário.cs" />
-    <Compile Include="Classes\Cliente.cs" />
-    <Compile Include="Classes\Jaula.cs" />
-    <Compile Include="Classes\Espetáculo.cs" />
-    <Compile Include="Classes\Veterinário.cs" />
-    <Compile Include="Classes\Comida.cs" />
-    <Compile Include="Menu_Clientes\Menu_Cliente.cs">
+    <Compile Include="Models\Animal.cs" />
+    <Compile Include="Models\Bilhete.cs" />
+    <Compile Include="Models\Compra.cs" />
+    <Compile Include="Models\Funcionário.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Jaula.cs" />
+    <Compile Include="Models\Espetáculo.cs" />
+    <Compile Include="Models\Veterinário.cs" />
+    <Compile Include="Models\Comida.cs" />
+    <Compile Include="Views\Form_Listar_Bilhetes_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Clientes\Menu_Cliente.Designer.cs">
-      <DependentUpon>Menu_Cliente.cs</DependentUpon>
+    <Compile Include="Views\Form_Listar_Bilhetes_Cliente.Designer.cs">
+      <DependentUpon>Form_Listar_Bilhetes_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Funcionarios\Form_Listar_Funcionários.cs">
+    <Compile Include="Views\Form_Menu_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Funcionarios\Form_Listar_Funcionários.Designer.cs">
+    <Compile Include="Views\Form_Menu_Cliente.Designer.cs">
+      <DependentUpon>Form_Menu_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Form_Listar_Bilhetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Form_Listar_Bilhetes.Designer.cs">
+      <DependentUpon>Form_Listar_Bilhetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Form_Registar_Bilhetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Form_Registar_Bilhetes.Designer.cs">
+      <DependentUpon>Form_Registar_Bilhetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Form_Listar_Animais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Form_Listar_Animais.Designer.cs">
+      <DependentUpon>Form_Listar_Animais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Form_Registar_Animal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Form_Registar_Animal.Designer.cs">
+      <DependentUpon>Form_Registar_Animal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Form_Listar_Funcionários.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Form_Listar_Funcionários.Designer.cs">
       <DependentUpon>Form_Listar_Funcionários.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Funcionarios\Form_Registar_Funcionário.cs">
+    <Compile Include="Views\Form_Registar_Funcionário.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Funcionarios\Form_Registar_Funcionário.Designer.cs">
+    <Compile Include="Views\Form_Registar_Funcionário.Designer.cs">
       <DependentUpon>Form_Registar_Funcionário.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Funcionarios\Form_Menu_Funcionarios.cs">
+    <Compile Include="Views\Form_Menu_Funcionarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Funcionarios\Form_Menu_Funcionarios.Designer.cs">
+    <Compile Include="Views\Form_Menu_Funcionarios.Designer.cs">
       <DependentUpon>Form_Menu_Funcionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Inicio\Bilhetes.cs">
+    <Compile Include="Views\Form_Menu_Inicial_Bilhetes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Inicio\Bilhetes.Designer.cs">
-      <DependentUpon>Bilhetes.cs</DependentUpon>
+    <Compile Include="Views\Form_Menu_Inicial_Bilhetes.Designer.cs">
+      <DependentUpon>Form_Menu_Inicial_Bilhetes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Inicio\Agenda.cs">
+    <Compile Include="Views\Form_Menu_Inicial_Agenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Inicio\Agenda.Designer.cs">
-      <DependentUpon>Agenda.cs</DependentUpon>
+    <Compile Include="Views\Form_Menu_Inicial_Agenda.Designer.cs">
+      <DependentUpon>Form_Menu_Inicial_Agenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Inicio\Animais.cs">
+    <Compile Include="Views\Form_Menu_Inicial_Animais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Inicio\Animais.Designer.cs">
-      <DependentUpon>Animais.cs</DependentUpon>
+    <Compile Include="Views\Form_Menu_Inicial_Animais.Designer.cs">
+      <DependentUpon>Form_Menu_Inicial_Animais.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Inicio\Resumo_Diário.cs">
+    <Compile Include="Views\Form_Menu_Inicial_História.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Inicio\Resumo_Diário.Designer.cs">
-      <DependentUpon>Resumo_Diário.cs</DependentUpon>
+    <Compile Include="Views\Form_Menu_Inicial_História.Designer.cs">
+      <DependentUpon>Form_Menu_Inicial_História.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Inicio\História.cs">
+    <Compile Include="Views\Form_Menu_Inicial_Serviços.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Inicio\História.Designer.cs">
-      <DependentUpon>História.cs</DependentUpon>
+    <Compile Include="Views\Form_Menu_Inicial_Serviços.Designer.cs">
+      <DependentUpon>Form_Menu_Inicial_Serviços.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Inicio\Serviços.cs">
+    <Compile Include="Views\Form_Menu_Inicial_Horário.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Inicio\Serviços.Designer.cs">
-      <DependentUpon>Serviços.cs</DependentUpon>
+    <Compile Include="Views\Form_Menu_Inicial_Horário.Designer.cs">
+      <DependentUpon>Form_Menu_Inicial_Horário.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Inicio\Horário.cs">
+    <Compile Include="Views\Form_Menu_Inicial_Regras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Inicio\Horário.Designer.cs">
-      <DependentUpon>Horário.cs</DependentUpon>
+    <Compile Include="Views\Form_Menu_Inicial_Regras.Designer.cs">
+      <DependentUpon>Form_Menu_Inicial_Regras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Inicio\Informações.cs">
+    <Compile Include="Views\Form_Menu_Inicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Inicio\Informações.Designer.cs">
-      <DependentUpon>Informações.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Menu_Inicio\Menu_Inicio_1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu_Inicio\Menu_Inicio_1.Designer.cs">
-      <DependentUpon>Menu_Inicio_1.cs</DependentUpon>
+    <Compile Include="Views\Form_Menu_Inicial.Designer.cs">
+      <DependentUpon>Form_Menu_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registos\Registos.cs">
+    <Compile Include="Views\Form_Registos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registos\Registos.Designer.cs">
-      <DependentUpon>Registos.cs</DependentUpon>
+    <Compile Include="Views\Form_Registos.Designer.cs">
+      <DependentUpon>Form_Registos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema_Login\Sistema_Login.cs">
+    <Compile Include="Views\Form_Sistema_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema_Login\Sistema_Login.Designer.cs">
-      <DependentUpon>Sistema_Login.cs</DependentUpon>
+    <Compile Include="Views\Form_Sistema_Login.Designer.cs">
+      <DependentUpon>Form_Sistema_Login.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Menu_Clientes\Menu_Cliente.resx">
-      <DependentUpon>Menu_Cliente.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Listar_Bilhetes_Cliente.resx">
+      <DependentUpon>Form_Listar_Bilhetes_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Funcionarios\Form_Registar_Funcionário.resx">
+    <EmbeddedResource Include="Views\Form_Menu_Cliente.resx">
+      <DependentUpon>Form_Menu_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form_Listar_Animais.resx">
+      <DependentUpon>Form_Listar_Animais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form_Listar_Bilhetes.resx">
+      <DependentUpon>Form_Listar_Bilhetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form_Registar_Animal.resx">
+      <DependentUpon>Form_Registar_Animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form_Registar_Bilhetes.resx">
+      <DependentUpon>Form_Registar_Bilhetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form_Registar_Funcionário.resx">
       <DependentUpon>Form_Registar_Funcionário.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Funcionarios\Form_Listar_Funcionários.resx">
+    <EmbeddedResource Include="Views\Form_Listar_Funcionários.resx">
       <DependentUpon>Form_Listar_Funcionários.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Funcionarios\Form_Menu_Funcionarios.resx">
+    <EmbeddedResource Include="Views\Form_Menu_Funcionarios.resx">
       <DependentUpon>Form_Menu_Funcionarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\Agenda.resx">
-      <DependentUpon>Agenda.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Menu_Inicial_Agenda.resx">
+      <DependentUpon>Form_Menu_Inicial_Agenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\Animais.resx">
-      <DependentUpon>Animais.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Menu_Inicial_Animais.resx">
+      <DependentUpon>Form_Menu_Inicial_Animais.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\Bilhetes.resx">
-      <DependentUpon>Bilhetes.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Menu_Inicial_Bilhetes.resx">
+      <DependentUpon>Form_Menu_Inicial_Bilhetes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\História.resx">
-      <DependentUpon>História.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Menu_Inicial_História.resx">
+      <DependentUpon>Form_Menu_Inicial_História.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\Horário.resx">
-      <DependentUpon>Horário.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Menu_Inicial_Horário.resx">
+      <DependentUpon>Form_Menu_Inicial_Horário.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\Informações.resx">
-      <DependentUpon>Informações.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Menu_Inicial_Regras.resx">
+      <DependentUpon>Form_Menu_Inicial_Regras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\Menu_Inicio_1.resx">
-      <DependentUpon>Menu_Inicio_1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Menu_Inicial.resx">
+      <DependentUpon>Form_Menu_Inicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\Resumo_Diário.resx">
-      <DependentUpon>Resumo_Diário.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Inicio\Serviços.resx">
-      <DependentUpon>Serviços.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Menu_Inicial_Serviços.resx">
+      <DependentUpon>Form_Menu_Inicial_Serviços.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -197,11 +235,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Registos\Registos.resx">
-      <DependentUpon>Registos.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Registos.resx">
+      <DependentUpon>Form_Registos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema_Login\Sistema_Login.resx">
-      <DependentUpon>Sistema_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Form_Sistema_Login.resx">
+      <DependentUpon>Form_Sistema_Login.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
